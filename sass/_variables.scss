@@ -1,0 +1,17 @@
+:root {
+  --black-primary: rgb(40, 40, 40);
+  --black-secondary: rgb(33, 33, 33);
+  --font-family-primary: "Neuzeit S LT Std";
+  --font-family-secondary: "NeuzeitOfficeW01-Regular";
+  --container-padding: 16px;
+  --text-shadow: 1px 1px 1px #0000005e;
+  --global-transition: all ease-out 100ms 100ms;
+  --cubic-transition: all cubic-bezier(0.68, -0.55, 0.27, 1.55) 300ms 200ms;
+
+  --font-tiny: calc(0.8rem + 0.6vmin);
+  --font-small: calc(1rem + 0.6vmin);
+  --font-medium: calc(1.2rem + 0.6vmin);
+  --font-large: calc(1.4rem + 0.6vmin);
+  --font-big: calc(1.6rem + 0.6vmin);
+  --font-title: calc(2rem + 0.6vmin);
+}
