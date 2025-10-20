@@ -308,7 +308,6 @@ body {
   max-width: 1430px;
   margin: 0 auto;
 }
-
 body::before {
   content: "";
   position: absolute;
@@ -321,13 +320,13 @@ body::before {
   animation: animBefore 2s ease forwards;
   animation-delay: 0.1s;
 }
-
 @keyframes animBefore {
   to {
     opacity: 0;
     z-index: -1;
   }
 }
+
 header {
   padding-top: 0;
   position: relative;
@@ -343,25 +342,24 @@ header {
   width: 92%;
   z-index: 1;
 }
-
 .Container .text-viewer {
   margin-top: 20px;
   padding-right: 100px;
   cursor: url("https://d2kq0urxkarztv.cloudfront.net/634a38daebe9a6001a0d6f02/image-8e769d79-60a9-4c6a-985b-1b7eec9595a9.png?w=50") 30 10, auto;
   overflow: visible;
-  mix-blend-mode: difference;
+  mix-blend-mode: normal;
   transition: all 0.3s ease;
 }
-
+.Container .text-viewer:hover {
+  mix-blend-mode: difference;
+}
 .Container #slider img {
   display: none;
   width: 40%;
 }
-
 .Container #slider img.active {
   display: block;
 }
-
 .Container #ct7 {
   font-family: "SubstanceW00-ExtraLight";
   font-weight: 800;
@@ -375,7 +373,6 @@ header {
   margin-top: -30px;
   cursor: url("https://d2kq0urxkarztv.cloudfront.net/634a38daebe9a6001a0d6f02/image-8e769d79-60a9-4c6a-985b-1b7eec9595a9.png?w=50") 30 10, auto;
 }
-
 .Container #ct8 {
   line-height: 36px;
   font-weight: 500;
@@ -386,10 +383,9 @@ header {
   cursor: url("https://d2kq0urxkarztv.cloudfront.net/634a38daebe9a6001a0d6f02/image-8e769d79-60a9-4c6a-985b-1b7eec9595a9.png?w=50") 30 10, auto;
   transition: all 0.3s ease;
 }
-
 .Container #ct8:hover {
-  mix-blend-mode: difference;
-  color: white;
+  opacity: 0.7;
+  letter-spacing: 2px;
 }
 
 main {
@@ -403,7 +399,6 @@ main {
   padding-left: 27px;
   padding-right: 10px;
 }
-
 .Container_one .p_one {
   width: auto;
   letter-spacing: 2px;
@@ -413,7 +408,6 @@ main {
   font-family: var(--font-family-primary);
   color: var(--black-primary);
 }
-
 .Container_one .p_two {
   width: auto;
   letter-spacing: 2px;
@@ -422,7 +416,6 @@ main {
   color: var(--black-primary);
   line-height: 27px;
 }
-
 .Container_one .p-presentation {
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -436,7 +429,6 @@ main {
   display: flex;
   justify-content: end;
 }
-
 .Container_two img {
   width: 65%;
   border-radius: 5px;
@@ -474,13 +466,11 @@ main {
   display: flex;
   gap: 22px;
 }
-
 .Container_three img,
 .Container_four img,
 .Container_five img {
   border-radius: 5px;
 }
-
 .Container_three .Container_five-bloc-two,
 .Container_four .Container_five-bloc-two,
 .Container_five .Container_five-bloc-two {
@@ -502,7 +492,6 @@ footer {
   mix-blend-mode: difference;
   font-weight: 400;
 }
-
 footer p {
   font-family: var(--font-family-primary);
   font-size: 17px;
@@ -510,7 +499,6 @@ footer p {
   transition: all 0.3s ease;
   cursor: default;
 }
-
 footer p:hover {
   opacity: 0.7;
   letter-spacing: 2px;
@@ -543,6 +531,11 @@ img:hover {
   }
   .Container #ct8 {
     font-size: 40px;
+    font-family: var(--font-family-primary);
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: default;
   }
   .p_two {
     padding-top: 70px;
